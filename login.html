@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital Management System - Patient Registration</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 10px;
+            padding: 10px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: black;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><strong>Patient Registration Form</strong></h2>
+        <form>
+            <label for="fullname"><strong>Full Name:</strong></label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="dob"><strong>Date of Birth:</strong></label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="Gender"><strong>Gender:</strong></label>
+            <select id="Gender" name="Gender" required>
+                <option value="">Select Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="Phone"><strong>Phone Number:</strong></label>
+            <input type="tel" id="Phone" name="Phone" placeholder="Enter your number" required>
+
+            <label for="email"><strong>Email Address:</strong></label>
+            <input type="email" id="email" name="email">
+
+            <label for="address"><strong>Address:</strong></label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="medicalHistory"><strong>Medical History:</strong></label>
+            <textarea id="medicalHistory" name="medicalHistory" rows="4" required></textarea>
+
+            <label for="allergies"><strong>Allergies:</strong></label>
+            <textarea id="allergies" name="allergies" rows="2" required></textarea>
+
+            <label for="currentMedications"><strong>Current Medications:</strong></label>
+            <textarea id="currentMedications" name="currentMedications" rows="2" required></textarea>
+
+            <label for="appointmentDate"><strong>Appointment Date:</strong></label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="doctor"><strong>Select Doctor:</strong></label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Select Doctor</option>
+                <option value="dr.Ram">Dr. Ram</option>
+                <option value="dr.Thakuri">Dr. Thakuri</option>
+                <option value="dr.Gunjana">Dr. Gunjana</option>
+            </select>
+
+            <label for="department"><strong>Department:</strong></label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="neurology">Neurology</option>
+                <option value="orthopedics">Orthopedics</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
